@@ -1,0 +1,26 @@
+fastapi==0.109.1
+uvicorn[standard]==0.27.0
+python-multipart==0.0.9
+
+# LangChain
+langchain==0.1.9
+langchain-community==0.0.24
+langchain-core==0.1.27
+
+# HuggingFace
+sentence-transformers==2.3.1
+transformers==4.37.2
+torch==2.1.2
+accelerate==0.26.1
+
+# Vector store
+faiss-cpu==1.7.4
+
+# Document parsing
+pdfplumber==0.10.3
+
+# Config & utilities
+python-dotenv==1.0.0
+pydantic==2.6.1
+pydantic-settings==2.1.0
+numpy==1.26.4
