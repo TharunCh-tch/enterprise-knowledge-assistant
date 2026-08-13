@@ -88,7 +88,7 @@ enterprise-rag/
 
 ### Prerequisites
 
-- Python 3.10+
+- Python 3.9+
 - 2 GB RAM minimum (4 GB recommended)
 - Internet access on first run (models are downloaded from HuggingFace Hub)
 
@@ -228,3 +228,22 @@ Set `LLM_MODEL=google/flan-t5-large` in `.env` and restart.
 | PDF parsing | [pdfplumber](https://github.com/jsvine/pdfplumber) |
 | Settings | [pydantic-settings](https://docs.pydantic.dev/latest/concepts/pydantic_settings/) |
 | Frontend | Vanilla HTML / CSS / JS |
+
+---
+
+## Testing
+
+```bash
+pip install -r requirements.txt -r requirements-dev.txt
+pytest
+```
+
+The suite covers document chunking, the RAG pipeline's retrieval logic (mocked
+for speed), the API routes, and a real end-to-end embedding + FAISS retrieval
+test on a small fixture document.
+
+---
+
+## License
+
+[MIT](LICENSE)
