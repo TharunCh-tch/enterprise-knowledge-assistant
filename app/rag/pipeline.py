@@ -6,11 +6,10 @@ import logging
 from typing import Dict, List, Optional, Tuple
 
 from langchain.schema import Document
-from langchain_community.embeddings import HuggingFaceEmbeddings
-from langchain_community.llms import HuggingFacePipeline
 from langchain_community.vectorstores import FAISS
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import PromptTemplate
+from langchain_huggingface import HuggingFaceEmbeddings, HuggingFacePipeline
 from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
 from transformers import pipeline as hf_pipeline
 
