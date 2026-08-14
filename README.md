@@ -11,7 +11,7 @@ A production-ready Retrieval-Augmented Generation (RAG) system that lets you upl
 | **Ingestion** | Upload PDF, TXT, and Markdown files via drag-and-drop or API |
 | **Chunking** | `RecursiveCharacterTextSplitter` (LangChain) with configurable size & overlap |
 | **Embeddings** | `sentence-transformers/all-MiniLM-L6-v2` — fast, 384-dim, CPU-friendly |
-| **Vector store** | FAISS (`IndexFlatIP`) — persisted to disk, reloaded on restart |
+| **Vector store** | FAISS (`IndexFlatL2`, Euclidean distance) — persisted to disk, reloaded on restart |
 | **Generation** | `google/flan-t5-base` (swappable via `.env`) wrapped in a LangChain LCEL chain |
 | **API** | FastAPI with auto-generated OpenAPI docs at `/docs` |
 | **Frontend** | Single-page HTML app — no framework, no build step |
