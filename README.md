@@ -4,6 +4,22 @@ A production-ready Retrieval-Augmented Generation (RAG) system that lets you upl
 
 ---
 
+## Screenshots
+
+**API docs** — auto-generated OpenAPI/Swagger UI at `/docs`:
+
+![API docs](docs/screenshots/api-docs.jpg)
+
+**Frontend** — a document uploaded and indexed into the FAISS knowledge base:
+
+![Upload UI](docs/screenshots/upload.jpg)
+
+**Query result** — a real question answered with retrieved source chunks and similarity scores:
+
+![Query result](docs/screenshots/query-result.jpg)
+
+---
+
 ## Features
 
 | Category | Details |
